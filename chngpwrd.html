@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+     welcome{{loginid}}
+
+<form action="/changepaswrd_post" method="post">
+    old pasword <input type="text" name="op"><br>
+    new paswrd  <input type="text" name="np"><br>
+    confirm new paswrd <input type="text" name="cp"> <br>
+    <input type="submit" value="chng paswrd">
+<form/>
+
+    {{data}}
+
+
+{% endblock %}
